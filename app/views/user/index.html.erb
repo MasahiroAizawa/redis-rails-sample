@@ -3,8 +3,25 @@
   <head>
     <title>Redis rails sample</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="sytlesheet/application.css">
   </head>
   <body>
-    Hello, world
+    <h2 class="name-title"> Redis server test</h2>
+    <form method="POST" action="<%= save_path %>">
+      <ul>
+        <li>
+          <label>Key:</label>
+          <input type="text" name="user[key]" >
+        </li>
+        <li>
+          <label>Value:</label>
+          <input type="text" name="user[value]">
+        </li>
+        <li>
+          <input type="submit" value="save">
+        </li>
+      </ul>
+    </form>
+    <%= @redis %>
   </body>
 </html>

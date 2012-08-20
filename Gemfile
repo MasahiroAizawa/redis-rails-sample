@@ -23,6 +23,9 @@ gem 'jquery-rails'
 
 gem 'redis'
 
+gem 'pry'
+gem 'pry-doc'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
